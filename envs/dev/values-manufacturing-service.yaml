@@ -4,7 +4,7 @@ image:
   repository: 516209541629.dkr.ecr.us-east-1.amazonaws.com/manufacturing-service
   tag: sha-5f9a265
   repository: 516209541629.dkr.ecr.us-east-1.amazonaws.com/manufacturing-service
-  tag: sha-a0017b8
+  tag: sha-ef1ccc7
   pullPolicy: Always
 service:
   type: ClusterIP
