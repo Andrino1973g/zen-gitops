@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: pharma-ui
   namespace: dev
+  labels:
+    app: pharma-ui
+    env: dev
 spec:
   type: ClusterIP
   selector:
