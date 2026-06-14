@@ -1,7 +1,7 @@
 replicaCount: 1
 fullnameOverride: supplier-service
 image:
-  repository: 516209541629.dkr.ecr.us-east-1.amazonaws.com/supplier-service
+  repository: 471112718685.dkr.ecr.us-east-1.amazonaws.com/supplier-service
   tag: sha-079d470
   pullPolicy: Always
 service:
@@ -44,7 +44,7 @@ readinessProbe:
   successThreshold: 1
 configmap:
   SPRING_PROFILES_ACTIVE: dev
-  DB_HOST: pharma-dev-postgres.cyrywaguk6v4.us-east-1.rds.amazonaws.com
+  DB_HOST: pharma-dev-postgres.YOUR_RDS_ID.us-east-1.rds.amazonaws.com
   LOG_LEVEL: DEBUG
   SERVER_PORT: "8084"
   MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,info,metrics,prometheus"
